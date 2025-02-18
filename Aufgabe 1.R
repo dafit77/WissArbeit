@@ -12,6 +12,7 @@ titanic <-
 # 1. Teilaufgabe (Michel)
 # Extrahiert aus dem Namen eine Variable mit der Anrede der Person
 
+
 # erfasst alles zwischen Komma und Punkt in der Spalte "Name" und packt es in 
 # die Spalte "Title",
 # also seperiert den Titel aus der Spalte "Name".
@@ -96,3 +97,6 @@ allMiss <- titanic$Age[titanic$Title == "Miss"]
 FalseVek3 <- is.na(titanic$Age[titanic$Title == "Miss"])
 allMiss[FalseVek3] <- med.Miss
 titanic$Age[titanic$Title == "Miss"] <- allMiss 
+
+  
+ 
