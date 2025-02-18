@@ -122,3 +122,10 @@ titanic$Deck<-ifelse(
   substr(titanic$Cabin, 1, 1)   #Ansonsten nimmt es den ersten Wert der Kabinennummer
 )
 
+# 6
+#Entfernt am Ende die Variablen „PassengerID“, „Name“, „Ticket“ und „Cabin“ aus dem Datensatz
+
+titanic$PassengerId <- NULL
+titanic$Name <- NULL
+titanic$Ticket <- NULL
+titanic$Cabin <- NULL
