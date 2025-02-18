@@ -9,7 +9,6 @@ titanic <-
 # titanic <- read.csv("~/Documents/R/titanic.csv")
 # Read Datei für mein Mac (David und Colin)
 
-
 # 1. Teilaufgabe (Michel)
 # Extrahiert aus dem Namen eine Variable mit der Anrede der Person
 
