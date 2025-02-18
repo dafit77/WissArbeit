@@ -43,5 +43,8 @@ titanic <-
   
 # 2. Teilaufgabe (David)
 # Codiert die Variablen „Survived“, „Sex“, „Embarked“ als factor um.
-
+  
+  titanic$Survived <- as.factor(titanic$Survived)
+  titanic$Sex <- as.factor(titanic$Sex)
+  titanic$Embarked <- as.factor(titanic$Embarked)
   
