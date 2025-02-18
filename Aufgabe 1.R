@@ -18,6 +18,8 @@ titanic <-
 # also seperiert den Titel aus der Spalte "Name".
 
 titanic$Title <- sub(".*,\\s*(.*?)\\..*", "\\1", titanic$Name) 
+# table(titanic$Title) # Anzeigen, welche Titel existieren 
+                       # und welche ersetzt werden
 
 # Anreden standardisieren, so dass nurnoch Mr, Mrs, Miss und Master
 # verwendet werden
@@ -95,6 +97,3 @@ allMiss <- titanic$Age[titanic$Title == "Miss"]
 FalseVek3 <- is.na(titanic$Age[titanic$Title == "Miss"])
 allMiss[FalseVek3] <- med.Miss
 titanic$Age[titanic$Title == "Miss"] <- allMiss 
-
-sum(is.na(titanic$Age))
-median(titanic$Age)
