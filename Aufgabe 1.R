@@ -51,3 +51,4 @@ titanic <-
   titanic$Sex <- as.factor(titanic$Sex)
   titanic$Embarked <- as.factor(titanic$Embarked)
   
+#
