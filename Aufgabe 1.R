@@ -1,5 +1,5 @@
 #Titanic Datensatz laden
- Development
+
 # sep= ";" wird verwendet bei mir, da die Spalten in der Ursprünglichen 
 # Datei nicht erkannt werden
 titanic <- 
@@ -34,7 +34,7 @@ titanic <- read.csv("C:/Users/Miche/Desktop/Wissenschaftliches_Arbeiten/titanic.
   
   
   # Anreden standardisieren, so dass nurnoch Mr, Mrs, Miss und Master verwendet werden
-Dev.-Michel
+
   Standart <- c(
     "Ms" = "Mrs",
     "Mlle" = "Mrs",
@@ -55,17 +55,19 @@ Dev.-Michel
     "Major"="Mr"
     )
   
-Development
+
   # Aendert die Einträge in der Spalte Titel nach dem Muster von der
   # Variabel "Standart"
 
   #Ändert die Einträge in der Spalte Titel nach dem Muster von der Variabel "Standart"
-Dev.-Michel
+
   titanic$Title <- ifelse(titanic$Title %in% names(Standart), 
                           Standart[titanic$Title], 
                           titanic$Title) 
-  
- Development
+
+  #überprüfen ob alle Titel geändert wurden
+  titanic$Title  
+
 # 2. Teilaufgabe (David)
 # Codiert die Variablen „Survived“, „Sex“, „Embarked“ als factor um.
   
@@ -77,7 +79,6 @@ Dev.-Michel
 #Überführt die Variable „Pclass“ in einen ordered-factor.
   titanic$Pclass<-factor(titanic$Pclass, levels = c(3, 2, 1), ordered = TRUE)
 
-    #überprüfen ob alle Titel geändert wurden
-    titanic$Title
     
- Dev.-Michel
+    
+
