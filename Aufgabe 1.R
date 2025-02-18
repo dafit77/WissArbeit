@@ -37,3 +37,7 @@ titanic <- read.csv("C:/Users/Miche/Desktop/Wissenschaftliches_Arbeiten/titanic.
   titanic$Title <- ifelse(titanic$Title %in% names(Standart), 
                           Standart[titanic$Title], 
                           titanic$Title) 
+  
+    #überprüfen ob alle Titel geändert wurden
+    titanic$Title
+    
