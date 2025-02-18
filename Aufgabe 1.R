@@ -52,6 +52,7 @@ titanic$Title <- ifelse(titanic$Title %in% names(Standart),
 #überprüfen ob alle Titel geändert wurden
 #table(titanic$Title)  
 
+
 # 2. Teilaufgabe (David)
 # Codiert die Variablen „Survived“, „Sex“, „Embarked“ als factor um.
 
@@ -76,6 +77,7 @@ med.Miss <- median(titanic$Age[titanic$Title == "Miss"], na.rm = TRUE)
 # na.rm funkrioniert vlcht bei Michel nicht, nachher bitte einmal testen
 #funktioniert(Michel)
 
+
 allMr <- titanic$Age[titanic$Title == "Mr"]
 FalseVek1 <- is.na(titanic$Age[titanic$Title == "Mr"])
 allMr[FalseVek1] <- med.Mr
@@ -95,6 +97,7 @@ allMiss <- titanic$Age[titanic$Title == "Miss"]
 FalseVek3 <- is.na(titanic$Age[titanic$Title == "Miss"])
 allMiss[FalseVek3] <- med.Miss
 titanic$Age[titanic$Title == "Miss"] <- allMiss 
+
 
 # 5. Teilaufgabe
 #Extrahiert aus der Variable „Cabin“ die folgenden Informationen und erzeugt neue Variablen hierfür:
