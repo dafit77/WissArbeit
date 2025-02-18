@@ -1,23 +1,24 @@
 #Titanic Datensatz laden
 # sep= ";" wird verwendet bei mir, da die Spalten in der Ursprünglichen 
 # Datei nicht erkannt werden
+
 titanic <- 
   read.csv("C:/Users/Miche/Desktop/Wissenschaftliches_Arbeiten/titanic.csv", 
            sep=";")
 
 
-# 1. Teilaufgabe 
+# 1. Teilaufgabe (Michel)
 # Extrahiert aus dem Namen eine Variable mit der Anrede der Person
-
 
 # erfasst alles zwischen Komma und Punkt in der Spalte "Name" und packt es in 
 # die Spalte "Title",
 # also seperiert den Titel aus der Spalte "Name".
-titanic$Title <- sub(".*,\\s*(.*?)\\..*", "\\1", titanic$Name) 
 
+titanic$Title <- sub(".*,\\s*(.*?)\\..*", "\\1", titanic$Name) 
 
 # Anreden standardisieren, so dass nurnoch Mr, Mrs, Miss und Master
 # verwendet werden
+
 Standart <- c(
   "Ms" = "Mrs",
   "Mlle" = "Mrs",
@@ -40,9 +41,14 @@ Standart <- c(
 
 # Aendert die Einträge in der Spalte Titel nach dem Muster von der
 # Variabel "Standart"
+
 titanic$Title <- ifelse(titanic$Title %in% names(Standart), 
                         Standart[titanic$Title], 
                         titanic$Title) 
+
+#überprüfen ob alle Titel geändert wurden
+
+titanic$Title  
 
 # 2. Teilaufgabe (David)
 # Codiert die Variablen „Survived“, „Sex“, „Embarked“ als factor um.
@@ -50,3 +56,20 @@ titanic$Title <- ifelse(titanic$Title %in% names(Standart),
 titanic$Survived <- as.factor(titanic$Survived)
 titanic$Sex <- as.factor(titanic$Sex)
 titanic$Embarked <- as.factor(titanic$Embarked)
+
+# 3. Teilaufgabe (Michel)
+# Überführt die Variable „Pclass“ in einen ordered-factor.
+
+titanic$Pclass<-factor(titanic$Pclass, levels = c(3, 2, 1), ordered = TRUE)
+
+# 4. Teilaufgabe (David)
+# Imputiert fehlende Werte in der Variable „Age“ mithilfe der erzeugten
+# Variable „Anrede“ über ein Imputationsverfahren eurer Wahl (z.B.
+# arithmetisches Mittel, Median, usw.)
+
+med.Mr <- median(titanic$Age[titanic$Title == "Mr"], na.rm = TRUE)
+med.Mrs <- median(titanic$Age[titanic$Title == "Mrs"], na.rm = TRUE)
+med.Master <- median(titanic$Age[titanic$Title == "Master"], na.rm = TRUE)
+med.Miss <- median(titanic$Age[titanic$Title == "Miss"], na.rm = TRUE)
+
+
