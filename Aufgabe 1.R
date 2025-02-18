@@ -99,6 +99,10 @@ titanic$Age[titanic$Title == "Miss"] <- allMiss
 # 5. Teilaufgabe
 #Extrahiert aus der Variable „Cabin“ die folgenden Informationen und erzeugt neue Variablen hierfür:
 
+# 5.3
+#Einträge mit unbekannter Kabinennummer, d.h. „“ setzt ihr auf NA.
+titanic$Cabin[titanic$Cabin == ""] <- NA #5.3 zuerst, damit Komplikationen im Code bei 5.1 und 5.2 vermieden werden
+
 # 5.1
 #Backbord oder Steuerbord? Tipp: Kabinen mit einer ungeraden Nummer liegen auf Steuerbord, die anderen auf Backbord.
 titanic$Side <-  ifelse( is.na(titanic$Cabin), 
@@ -109,4 +113,7 @@ titanic$Side <-  ifelse( is.na(titanic$Cabin),
                            "Backbord"                                               #Ansonsten auf Backbord gesetzt
                          )
                         )
- 
+
+# 5.2
+#
+
