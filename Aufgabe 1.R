@@ -119,6 +119,6 @@ titanic$Side <-  ifelse( is.na(titanic$Cabin),
 titanic$Deck<-ifelse(
   is.na(titanic$Cabin), 
   NA,                    #Wenn Kabinennummer unbekannt ist so ist auch Decknummer unbekannt
-  gsub("[0-9]", "", titanic$Cabin) #ersetzt alle Zahlen der Kabinennummer durch ""
+  substr(titanic$Cabin, 1, 1)   #Ansonsten nimmt es den ersten Wert der Kabinennummer
 )
 
