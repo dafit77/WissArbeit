@@ -6,7 +6,7 @@ titanic <-
            sep=";")
 
 
-# 1. Teilaufgabe 
+# 1. Teilaufgabe (Michel)
 # Extrahiert aus dem Namen eine Variable mit der Anrede der Person
 
   
@@ -50,5 +50,7 @@ titanic <-
   titanic$Survived <- as.factor(titanic$Survived)
   titanic$Sex <- as.factor(titanic$Sex)
   titanic$Embarked <- as.factor(titanic$Embarked)
-  
-#
+
+# 3. Teilaufgabe (Michel)
+#Überführt die Variable „Pclass“ in einen ordered-factor.
+  titanic$Pclass<-factor(titanic$Pclass, levels = c(3, 2, 1), ordered = TRUE)
