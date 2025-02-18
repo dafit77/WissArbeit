@@ -16,7 +16,7 @@ titanic <-
   
   
   # Anreden standardisieren, so dass nurnoch Mr, Mrs, Miss und Master
-  # verwendet werden so dass nurnoch Mr, Mrs, Miss und Master verwendet werden
+  # verwendet werden
 
   Standart <- c(
     "Ms" = "Mrs",
