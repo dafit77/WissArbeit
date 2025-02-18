@@ -6,6 +6,9 @@ titanic <-
   read.csv("C:/Users/Miche/Desktop/Wissenschaftliches_Arbeiten/titanic.csv", 
            sep=";")
 
+# titanic <- read.csv("~/Documents/R/titanic.csv")
+# Read Datei für mein Mac (David und Colin)
+
 
 # 1. Teilaufgabe (Michel)
 # Extrahiert aus dem Namen eine Variable mit der Anrede der Person
@@ -71,5 +74,27 @@ med.Mr <- median(titanic$Age[titanic$Title == "Mr"], na.rm = TRUE)
 med.Mrs <- median(titanic$Age[titanic$Title == "Mrs"], na.rm = TRUE)
 med.Master <- median(titanic$Age[titanic$Title == "Master"], na.rm = TRUE)
 med.Miss <- median(titanic$Age[titanic$Title == "Miss"], na.rm = TRUE)
+# na.rm funkrioniert vlcht bei Michel nicht, nachher bitte einmal testen
 
+allMr <- titanic$Age[titanic$Title == "Mr"]
+FalseVek1 <- is.na(titanic$Age[titanic$Title == "Mr"])
+allMr[FalseVek1] <- med.Mr
+titanic$Age[titanic$Title == "Mr"] <- allMr
 
+allMrs <- titanic$Age[titanic$Title == "Mrs"]
+FalseVek2 <- is.na(titanic$Age[titanic$Title == "Mrs"])
+allMrs[FalseVek2] <- med.Mrs
+titanic$Age[titanic$Title == "Mrs"] <- allMrs
+
+allMaster <- titanic$Age[titanic$Title == "Master"]
+FalseVek3 <- is.na(titanic$Age[titanic$Title == "Master"])
+allMaster[FalseVek3] <- med.Master
+titanic$Age[titanic$Title == "Master"] <- allMaster
+
+allMiss <- titanic$Age[titanic$Title == "Miss"]
+FalseVek3 <- is.na(titanic$Age[titanic$Title == "Miss"])
+allMiss[FalseVek3] <- med.Miss
+titanic$Age[titanic$Title == "Miss"] <- allMiss 
+
+sum(is.na(titanic$Age))
+median(titanic$Age)
