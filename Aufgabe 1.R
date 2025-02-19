@@ -15,7 +15,7 @@ titanic <-
 
 # erfasst alles zwischen Komma und Punkt in der Spalte "Name" und packt es in 
 # die Spalte "Title",
-# also seperiert den Titel aus der Spalte "Name".
+# also separiert den Titel aus der Spalte "Name".
 titanic$Title <- sub(".*,\\s*(.*?)\\..*", "\\1", titanic$Name) 
 # table(titanic$Title) # Anzeigen, welche Titel existieren 
 # und welche ersetzt werden
@@ -133,7 +133,7 @@ titanic$Deck<-ifelse(
                                  # der Kabinennummer
 )
 
-# 6
+# 6. Teilaufgabe
 # Entfernt am Ende die Variablen „PassengerID“, „Name“,
 # „Ticket“ und „Cabin“ aus dem Datensatz
 
@@ -142,5 +142,6 @@ titanic$Name <- NULL
 titanic$Ticket <- NULL
 titanic$Cabin <- NULL
 
+# 7. Teilaufgabe
 # Abspeichern
 write.csv(titanic, file = "titanic_Berichtigt.csv", row.names = FALSE)
