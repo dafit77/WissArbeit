@@ -4,6 +4,7 @@
 - [Projektbeschreibung](#projektbeschreibung)
 - [Gruppenmitglieder](#gruppenmitglieder)
 - [Aufgabenstellung](#aufgabenstellung)
+- - [Anleitung zum Nachvollziehen der Ergebnisse](#anleitung-zum-nachvollziehen-der-ergebnisse)
 - [Kontakt](#kontakt)
 ***
 ## Projektbeschreibung
@@ -39,6 +40,10 @@ Hierzu soll ein weiteres Skript im Repository erstellt werden.
 5. Diskutiert anschließend im GitHub Repository als ganze Gruppe die Ergebnisse.
 Möglicherweise haben die Gruppenmitglieder, die an (1.) gearbeitet haben noch
 weitere Ideen.
+***
+## Anleitung zum Nachvollziehen der Ergebnisse (Unvollständig bis Projekt beendet wurde)
+* 
+*
 ***
 ## Kontakt
 Für Fragen oder Anmerkungen wendet euch bitte an eines der Gruppenmitglieder:
