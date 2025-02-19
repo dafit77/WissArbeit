@@ -12,7 +12,7 @@ In diesem Projekt analysieren wir den Titanic-Datensatz mithilfe von R.
 Ziel ist es, den Datensatz aufzubereiten, sowie passende Visualisierungen zu erstellen.
 ***
 ## Gruppenmitglieder
-- Michel Schneck
+- [Michel Schneck](https://github.com/Michel-IMP)
 - Paul Brückner
 - David Tadevosyan
 - Colin Morgenstern
@@ -47,4 +47,4 @@ weitere Ideen.
 ## Kontakt
 Für Fragen oder Anmerkungen wendet euch bitte an eines der Gruppenmitglieder:
  * Bei Fragen zur benutzung unseres Repository bitte an Maximilian wenden
- * Bei Fragen zum bereinigten Titanic Datensatz bitte an David oder Michel wenden 
+ * Bei Fragen zum bereinigten Titanic Datensatz bitte an David oder [Michel](https://github.com/Michel-IMP) wenden 
