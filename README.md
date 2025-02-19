@@ -42,7 +42,7 @@ Möglicherweise haben die Gruppenmitglieder, die an (1.) gearbeitet haben noch
 weitere Ideen.
 ***
 ## Anleitung zum Nachvollziehen der Ergebnisse (Unvollständig bis Projekt beendet wurde)
-* Zuerst wurde der gegebene Datensatz mittels unseren [R Skripts](https://github.com/dafit77/WissArbeit/blob/main/WissArbeit_A1.R) bereinigt und daraus ist die Datei [titanic_Berichtigt](https://github.com/dafit77/WissArbeit/blob/main/titanic_Berichtigt.csv) entstanden, die genauen Zwischenschritte sind in Issue 1 aufgeschrieben
+* Zuerst wurde der gegebene Datensatz mittels unseren [R Skripts](https://github.com/dafit77/WissArbeit/blob/main/WissArbeit_A1.R) bereinigt und daraus ist die Datei [titanic_Berichtigt](https://github.com/dafit77/WissArbeit/blob/main/titanic_Berichtigt.csv) entstanden, die Zwischenschritte zur Bereinigung sind in [Issue 1](https://github.com/dafit77/WissArbeit/issues/1) aufgeschrieben
 *
 ***
 ## Kontakt
