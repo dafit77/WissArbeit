@@ -16,7 +16,7 @@ Ziel ist es, den Datensatz aufzubereiten, sowie passende Visualisierungen zu ers
 - Paul Brückner
 - [David Tadevosyan](https://github.com/dafit77)
 - Colin Morgenstern
-- Maximilian Petzel
+- [Maximilian Petzel](https://github.com/maxi2048)
 ***
 ## Aufgabenstellung
 1. Zwei Gruppenmitglieder erstellen ein R-Skript, mit welchem der Titanic-Datensatz
@@ -46,5 +46,5 @@ weitere Ideen.
 ***
 ## Kontakt
 Für Fragen oder Anmerkungen wendet euch bitte an eines der Gruppenmitglieder:
- * Bei Fragen zur benutzung unseres Repository bitte an Maximilian wenden
+ * Bei Fragen zur benutzung unseres Repository bitte an [Maximilian](https://github.com/maxi2048) wenden
  * Bei Fragen zum bereinigten Titanic Datensatz bitte an [David](https://github.com/dafit77) oder [Michel](https://github.com/Michel-IMP) wenden 
