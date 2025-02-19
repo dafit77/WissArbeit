@@ -2,11 +2,11 @@
 # sep= ";" wird verwendet bei mir, da die Spalten in der Urspruenglichen 
 # Datei nicht erkannt werden
 
-titanic <-
-  read.csv("C:/Users/Miche/Desktop/Wissenschaftliches_Arbeiten/titanic.csv",
-           sep=";")
+# titanic <-
+#   read.csv("C:/Users/Miche/Desktop/Wissenschaftliches_Arbeiten/titanic.csv",
+#            sep=";")
 
-# titanic <- read.csv("~/Documents/R/titanic.csv")
+titanic <- read.csv("~/Documents/R/titanic.csv")
 # Read Datei fuer mein Mac (David und Colin)
 
 # 1. Teilaufgabe (Michel)
@@ -145,3 +145,7 @@ titanic$Cabin <- NULL
 # 7. Teilaufgabe
 # Abspeichern
 write.csv(titanic, file = "titanic_Berichtigt.csv", row.names = FALSE)
+
+# Entfernen aller Objekte aus dem Speicher nach vollendung der Aufgabe
+# und Speichern der bearbeiteten Tabelle (optional, kann auskommentiert werden)
+rm(list=ls())
