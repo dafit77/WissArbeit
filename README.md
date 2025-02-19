@@ -4,7 +4,7 @@
 - [Projektbeschreibung](#projektbeschreibung)
 - [Gruppenmitglieder](#gruppenmitglieder)
 - [Aufgabenstellung](#aufgabenstellung)
-- [Anleitung zum Nachvollziehen der Ergebnisse](#anleitung-zum-nachvollziehen-der-ergebnisse)
+- [Anleitung zum Nachvollziehen der Ergebnisse](#anleitung-zum-nachvollziehen-der-ergebnisse-unvollständig-bis-projekt-beendet-wurde)
 - [Kontakt](#kontakt)
 ***
 ## Projektbeschreibung
