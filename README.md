@@ -43,4 +43,4 @@ weitere Ideen.
 ## Kontakt
 Für Fragen oder Anmerkungen wendet euch bitte an eines der Gruppenmitglieder:
  * Bei Fragen zur benutzung unseres Repository bitte an Maximilian wenden
- * Bei Fragen zum Bereinigten Titanic Datensatz bitte an David oder Michel wenden 
+ * Bei Fragen zum bereinigten Titanic Datensatz bitte an David oder Michel wenden 
