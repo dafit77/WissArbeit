@@ -1,16 +1,23 @@
-
-# Projektbeschreibung
+# Titanic Datenanalyse Projekt
+***
+## Inhaltsverzeichnis
+- [Projektbeschreibung](#projektbeschreibung)
+- [Gruppenmitglieder](#gruppenmitglieder)
+- [Aufgabenstellung](#aufgabenstellung)
+- [Kontakt](#kontakt)
+***
+## Projektbeschreibung
 In diesem Projekt analysieren wir den Titanic-Datensatz mithilfe von R.
 Ziel ist es, den Datensatz aufzubereiten, sowie passende Visualisierungen zu erstellen.
 ***
-# Gruppenmitglieder
+## Gruppenmitglieder
 - Michel Schneck
 - Paul Brückner
 - David Tadevosyan
 - Colin Morgenstern
 - Maximilian Petzel
 ***
-# Aufgabenstellung
+## Aufgabenstellung
 1. Zwei Gruppenmitglieder erstellen ein R-Skript, mit welchem der Titanic-Datensatz
 eingelesen und für eine Analyse vorverarbeitet wird. Am Ende des Skriptes sollen nur
 noch sinnvolle Variablen im Datensatz vorhanden sein, die auch bei einer Analyse
@@ -33,7 +40,7 @@ Hierzu soll ein weiteres Skript im Repository erstellt werden.
 Möglicherweise haben die Gruppenmitglieder, die an (1.) gearbeitet haben noch
 weitere Ideen.
 ***
-# Kontakt
+## Kontakt
 Für Fragen oder Anmerkungen wendet euch bitte an eines der Gruppenmitglieder:
  * Bei Fragen zur benutzung unseres Repository bitte an Maximilian wenden
  * Bei Fragen zum Bereinigten Titanic Datensatz bitte an David oder Michel wenden 
