@@ -15,7 +15,7 @@ Ziel ist es, den Datensatz aufzubereiten, sowie passende Visualisierungen zu ers
 - [Michel Schneck](https://github.com/Michel-IMP)
 - Paul Brückner
 - [David Tadevosyan](https://github.com/dafit77)
-- Colin Morgenstern
+- [Colin Morgenstern](https://github.com/ColinM2000)
 - [Maximilian Petzel](https://github.com/maxi2048)
 ***
 ## Aufgabenstellung
