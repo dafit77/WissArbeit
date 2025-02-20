@@ -1,3 +1,4 @@
+#2.v
 # Hilfsfunktion zur Überprüfung der Anzahl der Variablen
 check <- function(data, ...) {
   var<-c(...)
