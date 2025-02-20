@@ -1,6 +1,4 @@
 Version: 1.0
-<<<<<<< HEAD
-=======
 
 
 RestoreWorkspace: Default
@@ -8,7 +6,7 @@ SaveWorkspace: Default
 AlwaysSaveHistory: Default
 
 ProjectId: b28be973-9d9f-4e19-adcc-c07831157f99
->>>>>>> Dev.-Michel
+
 
 RestoreWorkspace: Default
 SaveWorkspace: Default
