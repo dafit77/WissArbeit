@@ -1,10 +1,7 @@
 #Titanic Datensatz laden
 # sep= ";" wird verwendet bei mir, da die Spalten in der Urspruenglichen 
 # Datei nicht erkannt werden
-
-# titanic <-
-#   read.csv("C:/Users/Miche/Desktop/Wissenschaftliches_Arbeiten/titanic.csv",
-#            sep=";")
+# titanic <-read.csv("C:/Users/Miche/Desktop/Wissenschaftliches_Arbeiten/titanic.csv", sep=";")
 
 titanic <- read.csv("~/Documents/R/titanic.csv")
 # Read Datei fuer mein Mac (David und Colin)
