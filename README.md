@@ -13,7 +13,7 @@ Ziel ist es, den Datensatz aufzubereiten, sowie passende Visualisierungen zu ers
 ***
 ## Gruppenmitglieder
 - [Michel Schneck](https://github.com/Michel-IMP)
-- Paul Brückner
+- [Paul Brückner](https://github.com/Xuanpaul00)
 - [David Tadevosyan](https://github.com/dafit77)
 - [Colin Morgenstern](https://github.com/ColinM2000)
 - [Maximilian Petzel](https://github.com/maxi2048)
