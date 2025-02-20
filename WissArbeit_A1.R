@@ -95,7 +95,7 @@ allMiss[FalseVek3] <- med.Miss
 titanic$Age[titanic$Title == "Miss"] <- allMiss 
 
 
-# 5. Teilaufgabe
+# 5. Teilaufgabe (Michel)
 # Extrahiert aus der Variable „Cabin“ die folgenden Informationen und erzeugt
 # neue Variablen hierfür:
 
@@ -130,7 +130,7 @@ titanic$Deck<-ifelse(
                                  # der Kabinennummer
 )
 
-# 6. Teilaufgabe
+# 6. Teilaufgabe (Michel)
 # Entfernt am Ende die Variablen „PassengerID“, „Name“,
 # „Ticket“ und „Cabin“ aus dem Datensatz
 
@@ -139,7 +139,7 @@ titanic$Name <- NULL
 titanic$Ticket <- NULL
 titanic$Cabin <- NULL
 
-# 7. Teilaufgabe
+# 7. Teilaufgabe (DAvid)
 # Abspeichern
 write.csv(titanic, file = "titanic_Berichtigt.csv", row.names = FALSE)
 
