@@ -1,3 +1,10 @@
+# Aufgabe 2b) 
+
+# Helper Funktionen für i und ii
+
+
+# Quantil für Funktion func_spread_summary 
+# eine Funktion die verschiedene Deskriptive Statistiken berechnet (Metrisch)
 #' Title
 #'
 #' @param x 
@@ -51,6 +58,45 @@ func_quantil <- function(x, perc) {
 # func_quantil(c,c(0.5,0.05))
 # Korrekterweise Fehlermeldung, da Vektor statt Zahl übergeben
 
+# Spannweite oder auch Range berechnet die Distanz von Maximum und Minimum
+#' Title
+#'
+#' @param data 
+#'
+#' @return
+#' @export
+#'
+#' @examples
+func_range <- function(data){
+  if (!is.numeric(data)) {
+    stop(paste("Eingabe muss ein numerischer Vektor sein stattdessen ist", typeof(data)))
+  }
+  
+  range <- unname(func_quantil(data,1))-unname(func_quantil(data,0))
+  return(range)
+}
+
+# Der Interquartilsabstand nutzt die Quantil Funktion
+#' Title
+#'
+#' @param data 
+#'
+#' @return
+#' @export
+#'
+#' @examples
+func_IQR <- function(data){
+  if(!is.numeric(data)){
+    stop(paste("Eingabe muss ein numerischer Vektor sein stattdessen ist", typeof(data)))
+  }
+  
+  IQR <- unname(func_quantil(data, .75))-unname(func_quantil(data, .25))
+  return(IQR)
+}
+
+
+
+# Modus berechnet den häufigsten Wert von Eingabevektor x 
 #' Title
 #'
 #' @param x 
@@ -78,7 +124,7 @@ func_modus <- function(x) {
 }
 
 
-
+# func_absolute_hkeit berechnet wie häufig jeder Wert vorgekommen ist (absolute Häufigkeit)
 #' Title
 #'
 #' @param data 
@@ -92,7 +138,7 @@ func_absolute_hkeit <- function(data) {
 }
 
 
-
+# func_relative_keit berechnet die relative Häufigkeit der unique Werte von data
 #' Title
 #'
 #' @param data 
@@ -105,6 +151,8 @@ func_relative_hkeit <- function(data) {
   return(prop.table(table(data)))
 }
 
+
+# func_modus_kategorial berechnet ebenfalls den Modus (Diskussion ob überflüssig)
 #' Title
 #'
 #' @param x 
@@ -119,7 +167,7 @@ func_modus_kategorial <- function(x) {
   return(names(haeufigkeiten[haeufigkeiten == mostfrequent]))
 }
 
-
+# func_Categories gibt an wieviele unterschiedliche Kategorien es gibt
 #' Title
 #'
 #' @param x 
