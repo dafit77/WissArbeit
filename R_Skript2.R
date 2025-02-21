@@ -25,7 +25,7 @@ func_quantil <- function(x, perc) {
   if (untere_grenze == obere_grenze) {
     pquantil <- x[untere_grenze]
   } else {
-    pquantil <- x[untere_grenzen] + (index - untere_grenze) * (x[obere_grenze] - x[untere_grenze])
+    pquantil <- x[untere_grenze] + (index - untere_grenze) * (x[obere_grenze] - x[untere_grenze])
   }
   
   names(pquantil) <- paste0(perc * 100, "%")
@@ -34,19 +34,100 @@ func_quantil <- function(x, perc) {
 
 # Testen: numerischer Vektor, character Vektor , boolean Vektor
 
-a <- c("Paul", "Michel", "Colin", "David", "Max")
-func_quantil(a, .5)
+# a <- c("Paul", "Michel", "Colin", "David", "Max")
+# func_quantil(a, .5)
 # Wie erwartet eine Fehlermeldung
-b <- c(TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE)
-func_quantil(b, .05)
-func_quantil(b, 10)
+# b <- c(TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE)
+# func_quantil(b, .05)
+# func_quantil(b, 10)
 # Ebenfalls wie erwartet eine Fehlermeldung
-c <- c(1,2,3,4,5,6,7,8,9,10)
-func_quantil(c,1)
+# c <- c(1,2,3,4,5,6,7,8,9,10)
+# func_quantil(c,1)
 # Liefert Korrekt das Maximum zurück
-func_quantil(c,0)
+# func_quantil(c,0)
 # Liefert Korrekt das Minimum zurück
-func_quantil(c,5)
+# func_quantil(c,5)
 # Korrekterweise Fehlermeldung, da >1
-func_quantil(c,c(0.5,0.05))
+# func_quantil(c,c(0.5,0.05))
 # Korrekterweise Fehlermeldung, da Vektor statt Zahl übergeben
+
+#' Title
+#'
+#' @param x 
+#'
+#' @return
+#' @export
+#'
+#' @examples
+func_modus <- function(x) {
+  if (length(x) == 0) {
+    stop("Der Vektor darf nicht leer sein")
+  }
+  
+  tab <- table(x)
+  
+  max_freq <- max(tab)
+  
+  modus <- names(tab[tab == max_freq])
+  
+  if (is.numeric(x)) {
+    return(as.numeric(modus))
+  } else {
+    return(modus)
+  }
+}
+
+
+
+#' Title
+#'
+#' @param data 
+#'
+#' @return
+#' @export
+#'
+#' @examples
+func_absolute_hkeit <- function(data) {
+  return(table(data))
+}
+
+
+
+#' Title
+#'
+#' @param data 
+#'
+#' @return
+#' @export
+#'
+#' @examples
+func_relative_hkeit <- function(data) {
+  return(prop.table(table(data)))
+}
+
+#' Title
+#'
+#' @param x 
+#'
+#' @return
+#' @export
+#'
+#' @examples
+func_modus_kategorial <- function(x) {
+  haeufigkeiten <- func_absolute_hkeit(x)
+  mostfrequent<- max(haeufigkeiten)
+  return(names(haeufigkeiten[haeufigkeiten == mostfrequent]))
+}
+
+
+#' Title
+#'
+#' @param x 
+#'
+#' @return
+#' @export
+#'
+#' @examples
+func_Categories <- function(x) {
+  return(length(unique(x)))
+}
