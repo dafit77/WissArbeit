@@ -44,6 +44,10 @@ weitere Ideen.
 ## Anleitung zum Nachvollziehen der Ergebnisse (Unvollständig bis Projekt beendet wurde)
 * Zuerst wurde der gegebene [Datensatz](https://github.com/dafit77/WissArbeit/blob/main/titanic.csv) mittels unseren [R Skripts](https://github.com/dafit77/WissArbeit/blob/main/WissArbeit_A1.R) bereinigt und daraus ist die Datei [titanic_Berichtigt](https://github.com/dafit77/WissArbeit/blob/main/titanic_Berichtigt.csv) entstanden, die Zwischenschritte zur Bereinigung sind in [Issue 1](https://github.com/dafit77/WissArbeit/issues/1) dokumentiert.
 * Anschließend wurde im [Forum](https://github.com/dafit77/WissArbeit/discussions/25) über mögliche Funktionen diskutiert, welche zum Analysieren des bereinigten Datensatz benutzt werden sollen.
+* Danach wurde die Bearbeitung der Aufgabe 1 angefangen und in wenigen Tagen beendet (von David und Michel)
+* Einteilung der Zustädnigkeit für verschiedene Teilaufgaben der Aufgabe 2 erfolgte im Forum unter den Titel [Diskussion zu Aufgabe 2/4 bezüglich sinnvoller Analysen](https://github.com/dafit77/WissArbeit/discussions/25)
+* Bearbeitung der Aufgabe 2 und detaillierte Dokumentation im [Forum](https://github.com/dafit77/WissArbeit/discussions/33)
+* (Vorläufiges) Speichern der jeweiligen Funktionen undter [Aufgabe_2_Skript_1.R](https://github.com/dafit77/WissArbeit/blob/Development/Aufgabe_2_Skript_1.R) (erstellt von Maximilian), [Aufgabe_2_Skript_2.R](https://github.com/dafit77/WissArbeit/blob/Development/Aufgabe_2_Skript_2.R) (erstellt von Maximilian), []() []() []() 
 ***
 ## Kontakt
 Für Fragen oder Anmerkungen wendet euch bitte an eines der Gruppenmitglieder:
