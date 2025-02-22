@@ -9,12 +9,11 @@ titanic <- read.csv("~/Documents/R/titanic.csv")
 # 1. Teilaufgabe (Michel)
 # Extrahiert aus dem Namen eine Variable mit der Anrede der Person
 
-
+titanic$Title <- sub(".*,\\s*(.*?)\\..*", "\\1", titanic$Name) 
 # erfasst alles zwischen Komma und Punkt in der Spalte "Name" 
 # und packt es in die Spalte "Title",
 # also separiert den Titel aus der Spalte "Name".
 
-titanic$Title <- sub(".*,\\s*(.*?)\\..*", "\\1", titanic$Name) 
 
 # table(titanic$Title) 
 # Anzeigen, welche Titel existieren und welche ersetzt werden
@@ -40,12 +39,13 @@ Standart <- c(
   "Major"="Mr"
 )
 
-# Aendert die Eintraege in der Spalte Titel nach dem Muster von der
-# Variabel "Standart"
 
 titanic$Title <- ifelse(titanic$Title %in% names(Standart), 
                         Standart[titanic$Title], 
                         titanic$Title) 
+# Aendert die Eintraege in der Spalte Titel nach dem Muster von der
+# Variabel "Standart"
+
 
 # ueberpruefen ob alle Titel geaendert wurden
 # table(titanic$Title)  
