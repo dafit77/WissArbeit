@@ -30,7 +30,7 @@ func_spread_summary <- function(data){
   
   iqr <- func_IQR(data = data)
   range <- func_range(data = data)
-  variance <- var(data)
+  variance <- var(data, na.rm = TRUE)
   var_coef <- func_variationscoeff(data)
   
   
