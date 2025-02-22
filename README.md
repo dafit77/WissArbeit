@@ -1,15 +1,24 @@
-# Projektbeschreibung
+# Titanic Datenanalyse Projekt
+***
+## Inhaltsverzeichnis
+- [Projektbeschreibung](#projektbeschreibung)
+- [Gruppenmitglieder](#gruppenmitglieder)
+- [Aufgabenstellung](#aufgabenstellung)
+- [Anleitung zum Nachvollziehen der Ergebnisse](#anleitung-zum-nachvollziehen-der-ergebnisse-unvollständig-bis-projekt-beendet-wurde)
+- [Kontakt](#kontakt)
+***
+## Projektbeschreibung
 In diesem Projekt analysieren wir den Titanic-Datensatz mithilfe von R.
 Ziel ist es, den Datensatz aufzubereiten, sowie passende Visualisierungen zu erstellen.
-
-# Gruppenmitglieder
-- Michel Schneck
+***
+## Gruppenmitglieder
+- [Michel Schneck](https://github.com/Michel-IMP)
 - Paul Brückner
-- David Tadevosyan
-- Colin Morgenstern
-- Maximilian Petzel
-
-# Aufgabenstellung
+- [David Tadevosyan](https://github.com/dafit77)
+- [Colin Morgenstern](https://github.com/ColinM2000)
+- [Maximilian Petzel](https://github.com/maxi2048)
+***
+## Aufgabenstellung
 1. Zwei Gruppenmitglieder erstellen ein R-Skript, mit welchem der Titanic-Datensatz
 eingelesen und für eine Analyse vorverarbeitet wird. Am Ende des Skriptes sollen nur
 noch sinnvolle Variablen im Datensatz vorhanden sein, die auch bei einer Analyse
@@ -31,6 +40,12 @@ Hierzu soll ein weiteres Skript im Repository erstellt werden.
 5. Diskutiert anschließend im GitHub Repository als ganze Gruppe die Ergebnisse.
 Möglicherweise haben die Gruppenmitglieder, die an (1.) gearbeitet haben noch
 weitere Ideen.
-
-# Kontakt
-Für Fragen oder Anmerkungen wendet euch bitte an eines der Gruppenmitglieder.
+***
+## Anleitung zum Nachvollziehen der Ergebnisse (Unvollständig bis Projekt beendet wurde)
+* Zuerst wurde der gegebene [Datensatz](https://github.com/dafit77/WissArbeit/blob/main/titanic.csv) mittels unseren [R Skripts](https://github.com/dafit77/WissArbeit/blob/main/WissArbeit_A1.R) bereinigt und daraus ist die Datei [titanic_Berichtigt](https://github.com/dafit77/WissArbeit/blob/main/titanic_Berichtigt.csv) entstanden, die Zwischenschritte zur Bereinigung sind in [Issue 1](https://github.com/dafit77/WissArbeit/issues/1) dokumentiert.
+* Anschließend wurde im [Forum](https://github.com/dafit77/WissArbeit/discussions/25) über mögliche Funktionen diskutiert, welche zum Analysieren des bereinigten Datensatz benutzt werden sollen.
+***
+## Kontakt
+Für Fragen oder Anmerkungen wendet euch bitte an eines der Gruppenmitglieder:
+ * Bei Fragen zur benutzung unseres Repository bitte an [Maximilian](https://github.com/maxi2048) wenden
+ * Bei Fragen zum bereinigten Titanic Datensatz bitte an [David](https://github.com/dafit77) oder [Michel](https://github.com/Michel-IMP) wenden 
