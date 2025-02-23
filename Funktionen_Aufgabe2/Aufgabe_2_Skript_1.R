@@ -5,6 +5,15 @@
 source("Aufgabe_2_Skript_2.R")
 
 
+#' Title
+#'
+#' @param data 
+#' @param ... 
+#'
+#' @return
+#' @export
+#'
+#' @examples
 Visualisierung <- function(data, ...) {
   var <- check(data, ...)
   

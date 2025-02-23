@@ -1,4 +1,14 @@
 # source("Skript 2 Aufgabe 2 a iii, iv")
+#' Title
+#'
+#' @param data 
+#' @param var1 
+#' @param var2 
+#'
+#' @return
+#' @export
+#'
+#' @examples
 bivariate_stats <- function(data, var1, var2) {
   library(dplyr)
   library(vcd)  # Für Assoziationsmaße wie Phi-Koeffizient

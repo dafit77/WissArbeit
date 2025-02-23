@@ -9,12 +9,18 @@
 renv::activate()
 renv::restore(prompt = FALSE) 
 
+file.exists("Funktionen_Aufgabe2/Aufgabe_2_Skript_1.R")
+file.exists("Funktionen_Aufgabe2/R_Skript1.R")
+file.exists("Funktionen_Aufgabe2/Aufgabe2_3_Skript1.R")
+
+
 source("Funktionen_Aufgabe2/Aufgabe_2_Skript_1.R")
 source("Funktionen_Aufgabe2/R_Skript1.R")
 source("Funktionen_Aufgabe2/Aufgabe2_3_Skript1.R")
 # Analyse des titanic_Bereinigt.csv
 
-df <- read.csv("titanic.csv", header = TRUE, stringsAsFactors = FALSE)
+
+df <- read.csv("titanic_Berichtigt.csv", header = TRUE, stringsAsFactors = FALSE)
 df
 
 
