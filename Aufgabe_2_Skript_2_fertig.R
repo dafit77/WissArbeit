@@ -5,15 +5,7 @@
 
 # Quantil für Funktion func_spread_summary 
 # eine Funktion die verschiedene Deskriptive Statistiken berechnet (Metrisch)
-#' Title
-#'
-#' @param x 
-#' @param perc 
-#'
-#' @return
-#' @export
-#'
-#' @examples
+
 func_quantil <- function(x, perc) {
   if (!is.numeric(x)) {
     stop(paste("Eingabe muss numerisch sein, ist aber", typeof(x)))
@@ -59,14 +51,7 @@ func_quantil <- function(x, perc) {
 # Korrekterweise Fehlermeldung, da Vektor statt Zahl übergeben
 
 # Spannweite oder auch Range berechnet die Distanz von Maximum und Minimum
-#' Title
-#'
-#' @param data 
-#'
-#' @return
-#' @export
-#'
-#' @examples
+
 func_range <- function(data){
   if (!is.numeric(data)) {
     stop(paste("Eingabe muss ein numerischer Vektor sein stattdessen ist", typeof(data)))
@@ -77,14 +62,7 @@ func_range <- function(data){
 }
 
 # Der Interquartilsabstand nutzt die Quantil Funktion
-#' Title
-#'
-#' @param data 
-#'
-#' @return
-#' @export
-#'
-#' @examples
+
 func_IQR <- function(data){
   if(!is.numeric(data)){
     stop(paste("Eingabe muss ein numerischer Vektor sein stattdessen ist", typeof(data)))
@@ -97,14 +75,7 @@ func_IQR <- function(data){
 
 
 # Modus berechnet den häufigsten Wert von Eingabevektor x 
-#' Title
-#'
-#' @param x 
-#'
-#' @return
-#' @export
-#'
-#' @examples
+
 func_modus <- function(x) {
   if (length(x) == 0) {
     stop("Der Vektor darf nicht leer sein")
@@ -125,42 +96,21 @@ func_modus <- function(x) {
 
 
 # func_absolute_hkeit berechnet wie häufig jeder Wert vorgekommen ist (absolute Häufigkeit)
-#' Title
-#'
-#' @param data 
-#'
-#' @return
-#' @export
-#'
-#' @examples
+
 func_absolute_hkeit <- function(data) {
   return(table(data))
 }
 
 
 # func_relative_keit berechnet die relative Häufigkeit der unique Werte von data
-#' Title
-#'
-#' @param data 
-#'
-#' @return
-#' @export
-#'
-#' @examples
+
 func_relative_hkeit <- function(data) {
   return(prop.table(table(data)))
 }
 
 
 # func_modus_kategorial berechnet ebenfalls den Modus (Diskussion ob überflüssig)
-#' Title
-#'
-#' @param x 
-#'
-#' @return
-#' @export
-#'
-#' @examples
+
 func_modus_kategorial <- function(x) {
   haeufigkeiten <- func_absolute_hkeit(x)
   mostfrequent<- max(haeufigkeiten)
@@ -168,14 +118,7 @@ func_modus_kategorial <- function(x) {
 }
 
 # func_Categories gibt an wieviele unterschiedliche Kategorien es gibt
-#' Title
-#'
-#' @param x 
-#'
-#' @return
-#' @export
-#'
-#' @examples
+
 func_Categories <- function(x) {
   return(length(unique(x)))
 }
