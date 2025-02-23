@@ -1,3 +1,5 @@
+source("Aufgabe_2_Skript_2_fertig.R")
+
 #2.i
 #Eine Funktion, die verschiedene geeignete deskriptive Statistiken für metrische Variablen berechnet und ausgibt
 
