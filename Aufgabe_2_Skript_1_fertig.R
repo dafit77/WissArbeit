@@ -51,7 +51,7 @@ func_categorial_summary <- function(data){
   
   mode <- func_modus_kategorial(data)
   relfreq <- func_relative_hkeit(data)
-  Categories <- func_Kategorien(data)
+  Categories <- func_Categories(data)
   
   return(list("Modus" = mode, "RelativeFrequency" = relfreq, "NumberCategories" = Categories))
   
@@ -74,29 +74,29 @@ bivariate_stats <- function(data, var1, var2) {
   # Prüfen, ob var1 dichotom und var2 metrisch ist
   if (length(unique(data[[var1]])) == 2 && is.numeric(data[[var2]])) {
     cat("\nPunktbiseriale Korrelation:\n")
-    point_biserial <- biserial.cor(data[[var2]], as.numeric(as.factor(data[[var1]])))
+    point_biserial <- suppressWarnings(biserial.cor(data[[var2]], as.numeric(as.factor(data[[var1]]))))
     print(point_biserial)
   }
   
   # Kontingenztabelle
   cat("\nKontingenztabelle:\n")
-  tbl <- table(data[[var1]], data[[var2]])
+  tbl <- suppressWarnings(table(data[[var1]], data[[var2]]))
   print(tbl)
   
   # Relative Häufigkeiten
   cat("\nRelative Häufigkeiten (gesamt):\n")
-  print(prop.table(tbl))
+  print(suppressWarnings(prop.table(tbl)))
   
   cat("\nRelative Häufigkeiten (zeilenweise):\n")
-  print(prop.table(tbl, margin = 1))
+  print(suppressWarnings(prop.table(tbl, margin = 1)))
   
   cat("\nRelative Häufigkeiten (spaltenweise):\n")
-  print(prop.table(tbl, margin = 2))
+  print(suppressWarnings(prop.table(tbl, margin = 2)))
   
   # Phi-Koeffizient (nur für dichotome Variablen)
   if (length(unique(data[[var1]])) == 2 && length(unique(data[[var2]])) == 2) {
     cat("\nPhi-Koeffizient:\n")
-    phi_value <- assocstats(tbl)$phi
+    phi_value <- suppressWarnings(assocstats(tbl)$phi)
     print(phi_value)
   } else {
     cat("\nPhi-Koeffizient nicht berechnet: Mindestens eine Variable hat mehr als zwei Kategorien.\n")
