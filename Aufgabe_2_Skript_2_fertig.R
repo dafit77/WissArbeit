@@ -123,6 +123,11 @@ func_Categories <- function(x) {
   return(length(unique(x)))
 }
 
+## für iii
+install.packages("dplyr")
+install.packages("vcd")
+install.packages("psych")
+
 #2.v
 # Hilfsfunktion zur Überprüfung der Anzahl der Variablen
 check <- function(data, ...) {
