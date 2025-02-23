@@ -58,7 +58,7 @@ bivariate_statsfkt(df, "Survived", "Pclass")
 
 # Frage: Wer hatte eine bessere Überlebenschance Junge oder Alte Menschen ? 
 bivariate_statsfkt(df, "Survived", "Age")
-# Junge Menschen haben eine bessere Chance gehabt 
+# Junge Menschen haben eine bessere Chance gehabt (Auch wenn die Korrelation nur schwach ist)
 
 # Gibt es einen Unterschied zwischen der Korrelation zwischen "Male" und "Female"
 bivariate_statsfkt(df[df$Sex == "male",], "Survived", "Age")

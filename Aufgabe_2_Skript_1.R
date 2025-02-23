@@ -16,7 +16,7 @@ func_spread_summary <- function(data){
     sd <- sd(data)               
     #Variationskoeffizient berechnet sich durch Standardabweichung/ Standardabweichung
     #normiert durch die "Einheit"
-    if (mean_freq == 0) {
+    if (mean == 0) {
       return(NA) 
     }
     # Abbruch für mean = 0
