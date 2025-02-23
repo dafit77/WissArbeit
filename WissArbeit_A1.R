@@ -3,7 +3,7 @@
 # Datei nicht erkannt werden
 # titanic <-read.csv("C:/Users/Miche/Desktop/Wissenschaftliches_Arbeiten/titanic.csv", sep=";")
 
-titanic <- read.csv("~/Documents/R/titanic.csv")
+titanic <- read.csv("titanic.csv")
 # Read Datei fuer mein Mac (David und Colin)
 
 # 1. Teilaufgabe (Michel)
