@@ -42,7 +42,7 @@ Möglicherweise haben die Gruppenmitglieder, die an (1.) gearbeitet haben noch
 weitere Ideen.
 ***
 ## Anleitung zum Nachvollziehen der Ergebnisse (Unvollständig bis Projekt beendet wurde)
-* Zuerst wurde der gegebene [Datensatz](https://github.com/dafit77/WissArbeit/blob/main/titanic.csv) mittels unseren [R Skripts](https://github.com/dafit77/WissArbeit/blob/main/WissArbeit_A1.R) bereinigt und daraus ist die Datei [titanic_Berichtigt](https://github.com/dafit77/WissArbeit/blob/main/titanic_Berichtigt.csv) entstanden, die Zwischenschritte zur Bereinigung sind in [Issue 1](https://github.com/dafit77/WissArbeit/issues/1) dokumentiert.
+* Zuerst wurde der gegebene [Datensatz](https://github.com/dafit77/WissArbeit/blob/main/titanic.csv) mittels unseren R Skripts [](https://github.com/dafit77/WissArbeit/blob/main/Aufgabe_1.R) bereinigt und daraus ist die Datei [titanic_Berichtigt](https://github.com/dafit77/WissArbeit/blob/main/titanic_Berichtigt.csv) entstanden, die Zwischenschritte zur Bereinigung sind in [Issue 1](https://github.com/dafit77/WissArbeit/issues/1) dokumentiert.
 * Anschließend wurde im [Forum](https://github.com/dafit77/WissArbeit/discussions/25) über mögliche Funktionen diskutiert, welche zum Analysieren des bereinigten Datensatz benutzt werden sollen.
 * Danach wurden die [Funktionen](Aufgabe_2_Skript_1_fertig.R) und [Hilfsfunktionen](Aufgabe_2_Skript_2_fertig.R) programmiert.
  
