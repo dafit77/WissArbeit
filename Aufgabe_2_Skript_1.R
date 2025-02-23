@@ -1,4 +1,4 @@
-# source("Aufgabe_2_Skript_2.R")
+source("Aufgabe_2_Skript_2.R")
 
 #2.i
 #Eine Funktion, die verschiedene geeignete deskriptive Statistiken für metrische Variablen berechnet und ausgibt
@@ -10,17 +10,17 @@
 func_spread_summary <- function(data){
   if(!is.numeric(data)){
     stop(paste("Eingabe ist nicht numerisch, sondern",typeof(data)))
-  }
+  } #Kontrolle ob die Eingabe korrekt ist, abbruch und Fehlermeldung wenn nicht
   func_variationscoeff <- function(data) {
-    abs_freq <- func_absolute_hkeit(data)  
-    mean_freq <- mean(abs_freq)            
-    sd_freq <- sd(abs_freq)               
-    
+    mean <- mean(data)            
+    sd <- sd(data)               
+    #Variationskoeffizient berechnet sich durch Standardabweichung/ Standardabweichung
+    #normiert durch die "Einheit"
     if (mean_freq == 0) {
       return(NA) 
     }
-    
-    return(sd_freq / mean_freq)  
+    # Abbruch für mean = 0
+    return(sd / mean)  
   }
   
   
@@ -48,6 +48,7 @@ func_categorial_summary <- function(data){
     stop(paste("Eingabe muss ein kategorialer Vektor sein (Faktor oder Character). Aber der Vektor ist:",
                typeof(data)))
   }
+  # Ebenfalls abfangen von Fehlermeldung bei falschem Datentyp in der Eingabe 
   
   mode <- func_modus_kategorial(data)
   relfreq <- func_relative_hkeit(data)
