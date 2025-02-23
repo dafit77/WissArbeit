@@ -170,7 +170,8 @@ write.csv(titanic, file = "titanic_Berichtigt.csv", row.names = FALSE)
 
 # Die Datei wird in der Directory der Repository gespeichert.
 
-rm(list=ls())
+# rm(list=ls())
+rm(allMaster, allMiss, allMr, allMrs, FalseVek1, FalseVek2, FalseVek3, med.Master,med.Miss,med.Mr,med.Mrs,Standart)
 
 # Entfernen aller Objekte aus dem Speicher nach vollendung der Aufgabe
 # und Speichern der bearbeiteten Tabelle (optional, kann auskommentiert werden)
