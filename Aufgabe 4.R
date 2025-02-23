@@ -9,7 +9,7 @@
 renv::activate()
 renv::restore(prompt = FALSE) 
 
-source("Aufgabe_2_Skript_1_fertig.R"
+source("Aufgabe_2_Skript_1_fertig.R")
 
 df <- read.csv("titanic_Berichtigt.csv", header = TRUE, stringsAsFactors = FALSE)
 df
