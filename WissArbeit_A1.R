@@ -14,7 +14,6 @@ titanic$Title <- sub(".*,\\s*(.*?)\\..*", "\\1", titanic$Name)
 # und packt es in die Spalte "Title",
 # also separiert den Titel aus der Spalte "Name".
 
-
 # table(titanic$Title) 
 # Anzeigen, welche Titel existieren und welche ersetzt werden
 
@@ -39,17 +38,14 @@ Standart <- c(
   "Major"="Mr"
 )
 
-
 titanic$Title <- ifelse(titanic$Title %in% names(Standart), 
                         Standart[titanic$Title], 
                         titanic$Title) 
 # Aendert die Eintraege in der Spalte Titel nach dem Muster von der
 # Variabel "Standart"
 
-
 # ueberpruefen ob alle Titel geaendert wurden
 # table(titanic$Title)  
-
 
 # 2. Teilaufgabe (David)
 # Codiert die Variablen „Survived“, „Sex“, „Embarked“ als factor um.
@@ -58,10 +54,17 @@ titanic$Survived <- as.factor(titanic$Survived)
 titanic$Sex <- as.factor(titanic$Sex)
 titanic$Embarked <- as.factor(titanic$Embarked)
 
+# Durch die RBase Funktion "as.factor" ist die Umcodierung des Codes 
+# sehr simpel und einfach durchgefuehrt
+
 # 3. Teilaufgabe (Michel)
 # Ueberfuehrt die Variable „Pclass“ in einen ordered-factor.
 
 titanic$Pclass<-factor(titanic$Pclass, levels = c(3, 2, 1), ordered = TRUE)
+
+# Erneute umsetzung der Faktor-Funktion aus Base R, diesmal mit der
+# Ergaenzung des "levels" Attributs, um eine korrekte Sortierung
+# zu gewaehrleisten
 
 # 4. Teilaufgabe (David)
 # Imputiert fehlende Werte in der Variable „Age“ mithilfe der erzeugten
@@ -72,8 +75,14 @@ med.Mr <- median(titanic$Age[titanic$Title == "Mr"], na.rm = TRUE)
 med.Mrs <- median(titanic$Age[titanic$Title == "Mrs"], na.rm = TRUE)
 med.Master <- median(titanic$Age[titanic$Title == "Master"], na.rm = TRUE)
 med.Miss <- median(titanic$Age[titanic$Title == "Miss"], na.rm = TRUE)
-# na.rm funkrioniert vlcht bei Michel nicht, nachher bitte einmal testen
-# funktioniert (Michel)
+
+# Schritt 1
+
+# Einigung auf die Verwendung des Medians fuer den Imputierten Wert.
+# Dieser wird jeweils auf eine Teilmenge die gesamte Wertemenge der
+# variable "Titles" angewand. Jede Anwendung bezieht sich daraufhin
+# auf den relevanten Aspekt und wir auf alle vorkommenden Merkmals-
+# auspraegungen einzelnd angewand.
 
 allMr <- titanic$Age[titanic$Title == "Mr"]
 FalseVek1 <- is.na(titanic$Age[titanic$Title == "Mr"])
@@ -95,6 +104,17 @@ FalseVek3 <- is.na(titanic$Age[titanic$Title == "Miss"])
 allMiss[FalseVek3] <- med.Miss
 titanic$Age[titanic$Title == "Miss"] <- allMiss 
 
+# Mehrschrittiger Prozess zur Bearbeitung der Wertetabelle der Variable "Age"
+# Zunächst werden alle Werte einer Merkmalsauspraegung in einem separaten
+# Vektor gespeichert. Auf diesem Vektor wird darauf ein logischer Vektor 
+# angewand, welcher den Wert "False" für jeder Position im verkuerzten Vektor
+# besitzt, wessen laenge gleich ist zur die Menge der jeweiligen Merkmals-
+# auspraegung. Nun kann differenziert werden, welche Werte in diesem Vektor
+# die Originalen Werte aus dem Datensatz sind, und welche Werte duch vorherige
+# ausarbeitung (Schritt 1) nun ergaenzt werden muessen. Nachdem dies Erfolgt 
+# wird der Originale Datensatz mit dem noch "unvollstaendigen" Vektor mit 
+# dem gerade erstelltem, "vollstaendigen" Vektor ueberschrieben. Diese 
+# Methode wird 4 mal wiederholt fuer jede Merkmalsauspraegung.
 
 # 5. Teilaufgabe (Michel)
 # Extrahiert aus der Variable „Cabin“ die folgenden Informationen und erzeugt
@@ -140,12 +160,17 @@ titanic$Name <- NULL
 titanic$Ticket <- NULL
 titanic$Cabin <- NULL
 
+# Die zu ueberschreibenden Variablen werden mit einer Nullmenge ersetzt, welche 
+# in der Darstellung danach komplett ausgelassen werden.
 
 # 7. Teilaufgabe (DAvid)
 # Abspeichern
+
 write.csv(titanic, file = "titanic_Berichtigt.csv", row.names = FALSE)
 
+# Die Datei wird in der Directory der Repository gespeichert.
+
+rm(list=ls())
 
 # Entfernen aller Objekte aus dem Speicher nach vollendung der Aufgabe
 # und Speichern der bearbeiteten Tabelle (optional, kann auskommentiert werden)
-rm(list=ls())
