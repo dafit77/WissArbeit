@@ -124,9 +124,7 @@ func_Categories <- function(x) {
 }
 
 ## für iii
-install.packages("dplyr")
-install.packages("vcd")
-install.packages("psych")
+
 
 #2.v
 # Hilfsfunktion zur Überprüfung der Anzahl der Variablen
